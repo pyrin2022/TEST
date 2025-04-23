@@ -1,2 +1,2 @@
-shell = new ActiveXObject('WScript.Shell');
-shell .Run("powershell.exe Invoke-Item c:\\windows\\system32\\calc.exe");
+$ws = New-Object -ComObject WScript.Shell
+$ws.Run("calc.exe")
