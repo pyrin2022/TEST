@@ -17,12 +17,7 @@ $hackMessage = @"
 ======================
   POWERSHELL COMPROMISED!
 ======================
-
 Your system's PowerShell has been exploited!
-
-Attack Vector: Remote Script Execution
-Method: DownloadString + IEX
-Status: EXECUTION SUCCESSFUL
 
 ======================
 Target Information:
@@ -38,14 +33,12 @@ NETWORK CONNECTIONS (netstat -an):
 $($netstatInfo -join "`n")
 
 ======================
-RUNNING PROCESSES (Top 15 by CPU):
+ALL RUNNING PROCESSES:
 ======================
 $($processList | Format-Table -AutoSize | Out-String)
 
 ======================
-This demonstrates how attackers use 
-PowerShell for system reconnaissance.
-Educational Purpose Only.
+Don't Worry. Educational Purpose Only.
 ======================
 "@
 
